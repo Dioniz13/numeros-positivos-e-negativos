@@ -1,10 +1,11 @@
-let diaDaSemana = prompt('Qual o dia da semana?');
-if (diaDaSemana =='domingo' || diaDaSemana == 'sábado') {
-    alert(`Hoje é ${diaDaSemana}. Bom fim de semana!`);
+let numero = prompt("Digite um número:");
+numero = Number(numero);
+if (numero>0){
+    alert('Número positivo');
 }
-else if (diaDaSemana == 'segunda' || diaDaSemana == 'terça' || diaDaSemana == 'quarta' || diaDaSemana == 'quinta' || diaDaSemana == 'sexta') {
-    alert(`Hoje é ${diaDaSemana}. Boa semana!`);
+else if (numero<0){
+    alert('Número negativo');
 }
-else {
-    alert('Dia inválido!');
+else{
+    alert('Número nulo');
 }
